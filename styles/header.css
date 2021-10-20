@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+    padding: 0px;
+}
+header {
+    padding: 0px 70px;
+    margin-bottom: 5px;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .contenedor1 figure {
+    padding: 5px 5px;
+    margin-left: 5px;    
+    border:  rgb(175, 175, 175) 1px solid;  
+    display: flex;
+    align-items: center;
+}
+header .contenedor2 figure {    
+    padding: 0px 5px;    
+    display: flex;
+    align-items: center;
+}
+header figure img {
+    width: 100%;
+}
+header div ul{
+    display: flex;  
+    align-items: center;    
+    flex-direction: row;  
+    list-style: none;
+}
+header .contenedor1 ul a {
+    border:  rgb(175, 175, 175) 1px solid;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 10px 25px;
+    margin-left: 5px;
+}
+header .contenedor2 ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    padding: 5px 5px;
+    margin-left: 0px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 12px;    
+}
+@media(max-width:500px){
+    header { 
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }header .contenedor1 ul, header .flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }header .contenedor1{
+        text-align: center;
+        width: 100%;
+    }header .contenedor2 ul a , header figure img{
+        border:  rgb(175, 175, 175) 1px solid;
+        margin: 5px;
+        padding: 3px 5px;
+    }header .contenedor1 ul li *{
+        border: none;        
+        width: 100%;
+    }header .contenedor1 ul li {
+        border-bottom: rgb(175, 175, 175) 2px solid;
+        width: 100%;        
+        display: flex;
+        justify-content: center;
+    }header .contenedor1 li figure {
+        margin: 0px;
+        padding: 0px;
+        width: 40px;
+    }header .contenedor1 li figure img{
+        width: 100%;
+    }
+}
